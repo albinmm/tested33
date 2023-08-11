@@ -1,0 +1,112 @@
+Uri: https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\npm\axios\dist\axios.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\css\all.min-1.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.eot
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-brands-400-2.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.eot?
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-brands-400-3.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.svg
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-brands-400-1.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-brands-400-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-brands-400-1.woff
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-brands-400-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.eot
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-regular-400-2.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.eot?
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-regular-400-3.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.svg
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-regular-400-1.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-regular-400-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-regular-400-1.woff
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-regular-400-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.eot
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-solid-900-2.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.eot?
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-solid-900-3.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.svg
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-solid-900-1.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-solid-900-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-solid-900-1.woff
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\ajax\libs\font-awesome\5.15.3\webfonts\fa-solid-900-1.woff2
+Content Type: application/octet-stream
+
+Uri: https://code.jquery.com/jquery-3.6.0.min.js
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\jquery-3.6.0.min-1.js
+Content Type: application/javascript
+
+Uri: https://importantdecision-0fe4a.web.app/back.jpg
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\back-1.jpg
+Content Type: image/jpeg
+
+Uri: https://importantdecision-0fe4a.web.app/fcf-assets/css/fcf.default.css
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\fcf-assets\css\fcf.default-1.css
+Content Type: text/css
+
+Uri: https://importantdecision-0fe4a.web.app/main.html
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\main.html
+Content Type: text/html
+
+Uri: https://importantdecision-0fe4a.web.app/profile-icon.png
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\profile-icon-1.png
+Content Type: image/png
+
+Uri: https://importantdecision-0fe4a.web.app/search-icon.png
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\search-icon-1.png
+Content Type: image/png
+
+Uri: https://scontent.fprn3-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=6825c5&_nc_ohc=6X7KG-JT0YAAX-UYaet&_nc_ht=scontent.fprn3-1.fna&oh=00_AfAV7ex3ptAEGsJfdLh7dlCfWNDp5yfQ-H2cRq5JYqXobw&oe=64D16030
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\v\t39.8562-6\252294889_575082167077436_6034106545912333281_n-1.svg
+Content Type: image/svg+xml
+
+t=scontent.fprn3-1.fna&oh=00_AfAV7ex3ptAEGsJfdLh7dlCfWNDp5yfQ-H2cRq5JYqXobw&oe=64D16030
+File Name: C:\Downloaded Web Sites\importantdecision-0fe4a.web.app\v\t39.8562-6\252294889_575082167077436_6034106545912333281_n.svg
+Content Type: image/svg+xml
+
